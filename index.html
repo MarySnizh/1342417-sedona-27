@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Седона</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
     </header>
 
     <main>
-      <h1>Седона - город-курорт</h1>
+      <h1 class="visually-hidden">Седона - город-курорт</h1>
       <!--
         <img src="img/background_photo.jpg" alt="каньон" width="1200" height="715">
         <img src="img/polygon.svg">
@@ -30,31 +31,24 @@
         заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <section>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <!--Здесь будет форма бронирования гостиницы-->
-      </section>
-      <section>
-        
         <ol>
           <li>
             <div><h2>Настоящий городок</h2></div>
-            <img src="img/photo-houses.jpg" alt="">
+            <img src="img/photo-houses.jpg" alt="Фотография вида города">
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <ul>
              <li>
-              <img src="img/icon-home.svg">
+              <img src="img/icon-home.svg" alt="">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
              </li>
              <li>
-              <img src="img/icon-burger.svg">
+              <img src="img/icon-burger.svg" alt="">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
              </li>
              <li>
-              <img src="img/icon-gift.svg">
+              <img src="img/icon-gift.svg" alt="">
               <h3>Сувениры</h3>
               <p>Не только китайского, но и местного производства!</p>
              </li>
@@ -62,7 +56,7 @@
           </li>
           <li>
             <div><h2>Там есть мост дьявола</h2></div>
-            <img src="img/photo-canyon.jpg" alt="">
+            <img src="img/photo-canyon.jpg" alt="Фотография каньона">
             <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
           </li>
           <li>
@@ -79,7 +73,30 @@
           </li>
         </ol>
       </section>
-      <div><img src="img/map.jpg" alt="map.png"></div>
+      <section>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <h2 class="form-title">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+          <p><label>Дата заезда: 
+          <input type="date" name="date-in" value="2017-04-24">
+         </label></p>
+         <p><label>Дата выезда: 
+          <input type="date" name="date-out" value="2017-07-04">
+         </label></p>
+         <p><label>
+           Взрослые: <input type="number" name="adults" min="1" max="10" value="2">
+           </label>
+         </p>
+         <p><label>
+          Дети: <input type="number" name="childs" min="0" max="10" value="0">
+          </label>
+        </p>
+        <button type="submit">Найти</button>
+        </form>
+      </section>
+      <div><img src="img/map.jpg" widht="800" height="500" alt="Карта расположения города Седона"></div>
     </main>
   
    <footer>
@@ -91,7 +108,7 @@
         <li><a href="#"><img src="img/youtube.svg" alt="Ютюб"></a></li>
       </ul>
     </div>
-    <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="" width="115" height="40"></a></p>
+    <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип html-academy" width="115" height="40"></a></p>
 
    </footer>
   </body>
