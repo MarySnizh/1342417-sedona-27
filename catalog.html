@@ -2,23 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <title>Седона</title>
   </head>
   <body>
-    <header>   
-     <nav>
-      <a href="index.html">
-        <img src="img/logo.svg" alt="Логотип" width="140" height="70">
-      </a>
-      <ul>
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="ph-vd.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <nav class="navigation">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="Логотип" width="140" height="70">
+        </a>
+        <ul class="navigation-list">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="ph-vd.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
       <section class="filters">
@@ -26,7 +28,7 @@
  <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура</legend>
-          <un>
+          <ul>
             <li><label>
               <input type="checkbox" name="waterpool" checked>Бассейн
             </label>
@@ -39,11 +41,11 @@
               <input type="checkbox" name="wi-fi">Wi-Fi
             </label>
             </li>
-          </un>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Тип жилья</legend>
-          <un>
+          <ul>
             <li><label>
               <input type="checkbox" name="holel" checked>Гостиница
             </label>
@@ -56,7 +58,7 @@
               <input type="checkbox" name="apartments" checked>Апартаменты
             </label>
             </li>
-          </un>
+          </ul>
         </fieldset>
         <fieldset>
           <label>От
@@ -80,8 +82,8 @@
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По рейтингу</a>
-        <a href="#">По возрастанию</a>
-        <a href="#">По убыванию</a>
+        <a href="#"><label class="visually-hidden">По возрастанию</label></a>
+        <a href="#"><label class="visually-hidden">По убыванию</label></a>
     </section>
       <section>
       <h1 class="visually-hidden">Гостиницы</h1>
@@ -125,15 +127,17 @@
     </main>
   
     <footer>
-      <p>#VISITSEDONA</p>
+      <p class="hashtag">#VISITSEDONA</p>
+      <a href="tel:74956660266">Тел: +7(495)666-02-66</a>
+  
       <div>
-        <ul>
-          <li><a href="#"><img src="img/twitter.svg" alt="Твиттер"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-          <li><a href="#"><img src="img/youtube.svg" alt="Ютюб"></a></li>
+        <ul class="socials">
+          <li><a href="#"><div class="socials twitter"></div><label class="visually-hidden">Твиттер</label></a></li>
+          <li><a href="#"><div class="socials facebook"></div><label class="visually-hidden">Фейсбук</label></a></li>
+          <li><a href="#"><div class="socials youtube"></div><label class="visually-hidden">Ютюб</label></a></li>
         </ul>
       </div>
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип Html Academy" width="115" height="40"></a></p>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип html-academy" width="115" height="40"></a></p>
   
      </footer>
   </body>

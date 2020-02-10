@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: black;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+
+    background-color: #e3e8e7;
+}
+
+ol {
+    list-style: none;
+    counter-reset: css_counter;
+}
+
+li:before {
+    counter-increment: css_counter;
+    content: counters(css_counter,'.');
+    margin: 0 5px 0 0;
+    
+}
+
+ol.sub-prod {
+    content: none;
+}

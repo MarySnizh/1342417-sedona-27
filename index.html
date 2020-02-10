@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <title>Седона</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navigation">
         <a>
           <img src="img/logo.svg" alt="Логотип" width="140" height="70">
         </a>
-        <ul>
+        <ul class="navigation-list">
           <li><a href="info.html">Информация</a></li>
           <li><a href="ph-vd.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
@@ -22,21 +24,22 @@
 
     <main>
       <h1 class="visually-hidden">Седона - город-курорт</h1>
-      <!--
-        <img src="img/background_photo.jpg" alt="каньон" width="1200" height="715">
-        <img src="img/polygon.svg" alt="Полигон">
+      <section class="main-img" >
+        <div class="welcoming-img"></div>
+       <!-- <div class="background-img"><img src="img/background_photo.jpg" alt="каньон" width="1200" height="715"></div> -->
+        <!-- <img src="img/polygon.svg" alt="Полигон">
         <img src="img/welcome.svg" width="455" height="350">
         -->
-        <p>Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+        <div class="welcoming"><p>Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</p><p class="welcoming">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></div>
       <section>
-        <ol>
+        <ol class="features">
           <li>
-            <div><h2>Настоящий городок</h2></div>
+            <div class="feature"><h2>Настоящий городок</h2>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
             <img src="img/photo-houses.jpg" alt="Фотография вида города">
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <ul>
+            <ul class="features-list">
              <li>
               <img src="img/icon-home.svg" alt="">
               <h3>Жильё</h3>
@@ -55,32 +58,32 @@
             </ul>
           </li>
           <li>
-            <div><h2>Там есть мост дьявола</h2></div>
             <img src="img/photo-canyon.jpg" alt="Фотография каньона">
-            <p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
+            <div class="feature"><h2>Там есть мост дьявола</h2>
+            <p>Да, по нему можно пройти, если конечно вы осмелитесь</p></div>
           </li>
           <li>
-            <h2>Небольшая площадь</h2>
-            <p>Все достопримечательности находятся очень близко</p>
+            <div class="feature gray"><h2>Небольшая площадь</h2>
+            <p>Все достопримечательности находятся очень близко</p></div>
           </li>
           <li>
-            <h2>Красивая дорога</h2>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="feature gray"><h2>Красивая дорога</h2>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></div>
           </li>
           <li>
-            <h2>Мало туристов</h2>
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <div class="feature gray"><h2>Мало туристов</h2>
+            <p>Большинство едет в гранд каньон и толпится там</p></div>
           </li>
         </ol>
       </section>
       <section>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <h2 class="form-title">Поиск гостиницы в Седоне</h2>
+        <div class="form"><p class="form caption">Заинтересовались?</p>
+        <p class="form subcaption">Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p></div>
+          <h2 class="form title">Поиск гостиницы в Седоне</h2>
           <form action="https://echo.htmlacademy.ru" method="get">
           <p><label>Дата заезда: 
-          <input type="date" name="date-in" value="2017-04-24">
+          <input type="date" name="date-in" value="2017-04-24"><!--Потом заменить на type="text"-->
          </label></p>
          <p><label>Дата выезда: 
           <input type="date" name="date-out" value="2017-07-04">
@@ -100,12 +103,14 @@
     </main>
   
    <footer>
-    <p>#VISITSEDONA</p>
+    <p class="hashtag">#VISITSEDONA</p>
+    <a href="tel:74956660266">Тел: +7(495)666-02-66</a>
+
     <div>
-      <ul>
-        <li><a href="#"><img src="img/twitter.svg" alt="Твиттер"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" alt="Ютюб"></a></li>
+      <ul class="socials">
+        <li><a href="#"><div class="socials twitter"></div><label class="visually-hidden">Твиттер</label></a></li>
+        <li><a href="#"><div class="socials facebook"></div><label class="visually-hidden">Фейсбук</label></a></li>
+        <li><a href="#"><div class="socials youtube"></div><label class="visually-hidden">Ютюб</label></a></li>
       </ul>
     </div>
     <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип html-academy" width="115" height="40"></a></p>
