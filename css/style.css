@@ -35,10 +35,40 @@ p.welcoming {
     font-weight: normal;
 }
 
+.welcoming-img {
+    background-image: url(../img/background_photo2.jpg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 509px;
+}
+
+.welcoming-text {
+    text-align: center;
+    padding-top: 76px;
+}
+
+.welcoming-polygon {
+    padding-top: 23px;
+}
+
+.navigation {
+    background-color: white;
+}
+
 .navigation a:hover {
     font-weight: bold;
     text-decoration-line: none;
     color: #81b3d2;
+}
+
+.navigation a:active {
+    color: #cacaca;
+}
+
+.curent-page {
+    pointer-events: none;
+    cursor: default;
+    color: #766357;
 }
 
 .navigation a:active {
@@ -48,8 +78,10 @@ p.welcoming {
 }
 
 .socials,
+.features,
 .features-list,
-.navigation-list {
+.navigation-list,
+.results {
     list-style: none;
 }
 
@@ -63,14 +95,12 @@ p.welcoming {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .hashtag {
     font-weight: bold;
 }
 
-.feature {
-    margin: 10px;
-    padding: 10px;
-
+.feature { 
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -81,12 +111,24 @@ p.welcoming {
     width: 400px;
     height: 257px;
 }
+
 .feature h2 {
+    padding-top: 50px;
     font-weight: bold;
 }
+
+p .feature {
+    padding: 50px;
+}
+
 .feature.gray {
     color: black;
     background-color: #eeeeee;
+}
+
+.features-list {
+    text-align: center;
+    background-color: white;
 }
 
 .socials.twitter,
@@ -129,14 +171,18 @@ p.welcoming {
 
 }
 
+.form-booking {
+    padding: 10px;
+    background-color: white;
+}
+
 .form.caption {
-    padding-top: 58px ;
+    padding-top: 58px;
     font-size: 30px;
 }
 
 .form.subcaption {
     padding-bottom: 54px;
-    text-align: center;
     font-weight: normal;
 }
 
@@ -150,9 +196,93 @@ p.welcoming {
     background-color: #766357;
 }
 
+.form-date-in,
+.form-date-out,
+.form-adults,
+.form-childs {
+    font-weight: bold;
+}
+
+.form-booking input[type="date"],
+.form-booking input[type="number"] {
+    font: inherit;
+    border: none;
+
+    background-color: #f2f2f2;
+    padding-left: 13px;
+    width: 345px;
+    height: 38px;
+}
+
+button.find {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+
+    border:none;
+    background-color: #81b3d2;
+
+    width: 458px;
+    height: 58px;
+}
+
+button.find:hover {
+    background-color: #669ec0;
+}
+
+button.find:active {
+    color: #94b9d2;
+    background-color: #5496bd;
+}
+
 .main-footer {
     background-color: white;
     opacity: 0.9;
 
     background-position: 0 0;
+}
+
+.hotel-result {
+    background-color: white;
+}
+
+h3.hotel-result {
+    font-size: 21px;
+    
+}
+
+.button-about {
+    text-align: center;
+    color: white;
+    background-color: #81b3d2;
+
+}
+
+.button-book {
+    text-align: center;
+    color: white;
+    background-color: #766357;
+}
+
+.button-about:hover {
+    background-color: #669ec0;
+}
+
+.button-about:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+}
+
+.button-book:hover {
+    background-color: #604e43;
+}
+
+.button-book:active {
+    background-color: #503e33;
+    color: #928a85;
+}
+.rating p {
+    text-align: center;
+    background-color: #f2f2f2;
 }

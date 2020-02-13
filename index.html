@@ -25,11 +25,10 @@
     <main>
       <h1 class="visually-hidden">Седона - город-курорт</h1>
       <section class="main-img" >
-        <div class="welcoming-img"></div>
-       <!-- <div class="background-img"><img src="img/background_photo.jpg" alt="каньон" width="1200" height="715"></div> -->
-        <!-- <img src="img/polygon.svg" alt="Полигон">
-        <img src="img/welcome.svg" width="455" height="350">
-        -->
+        <div class="welcoming-img">
+          <div class="welcoming-text"><img src="img/welcome.svg" alt="Фотография каньона" width="460px" height="345px"></div>
+          <div class="welcoming-polygon"><img src="img/polygon.svg"></div>
+        </div>
       </section>
         <div class="welcoming"><p>Седона — небольшой городок в Аризоне,
         заслуживающий большего!</p><p class="welcoming">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></div>
@@ -37,6 +36,7 @@
         <ol class="features">
           <li>
             <div class="feature"><h2>Настоящий городок</h2>
+              <p>-№1-</p>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
             <img src="img/photo-houses.jpg" alt="Фотография вида города">
             <ul class="features-list">
@@ -60,18 +60,22 @@
           <li>
             <img src="img/photo-canyon.jpg" alt="Фотография каньона">
             <div class="feature"><h2>Там есть мост дьявола</h2>
+              <p>-№2-</p>
             <p>Да, по нему можно пройти, если конечно вы осмелитесь</p></div>
           </li>
           <li>
             <div class="feature gray"><h2>Небольшая площадь</h2>
+              <p>-№3-</p>
             <p>Все достопримечательности находятся очень близко</p></div>
           </li>
           <li>
             <div class="feature gray"><h2>Красивая дорога</h2>
+              <p>-№4-</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></div>
           </li>
           <li>
             <div class="feature gray"><h2>Мало туристов</h2>
+              <p>-№5-</p>
             <p>Большинство едет в гранд каньон и толпится там</p></div>
           </li>
         </ol>
@@ -81,22 +85,22 @@
         <p class="form subcaption">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p></div>
           <h2 class="form title">Поиск гостиницы в Седоне</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
-          <p><label>Дата заезда: 
+          <form class="form-booking" action="https://echo.htmlacademy.ru" method="get">
+          <p><label class="form-date-in">Дата заезда: 
           <input type="date" name="date-in" value="2017-04-24"><!--Потом заменить на type="text"-->
          </label></p>
-         <p><label>Дата выезда: 
+         <p><label class="form-date-out">Дата выезда: 
           <input type="date" name="date-out" value="2017-07-04">
          </label></p>
-         <p><label>
+         <p><label class="form-adults">
            Взрослые: <input type="number" name="adults" min="1" max="10" value="2">
            </label>
          </p>
-         <p><label>
+         <p><label class="form-childs">
           Дети: <input type="number" name="childs" min="0" max="10" value="0">
           </label>
         </p>
-        <button type="submit">Найти</button>
+        <div class="form-button"><button class="find" type="submit">Найти</button></div>
         </form>
       </section>
       <div><img src="img/map.jpg" widht="800" height="500" alt="Карта расположения города Седона"></div>
@@ -105,14 +109,11 @@
    <footer class="main-footer">
     <p class="hashtag">#VISITSEDONA</p>
     <a href="tel:+74956660266">Тел: +7(495)666-02-66</a>
-
-    <div class="socials-div">
       <ul class="socials">
         <li><a href="#"><div class="socials twitter"></div><span class="visually-hidden">Твиттер</span></a></li>
         <li><a href="#"><div class="socials facebook"></div><span class="visually-hidden">Фейсбук</span></a></li>
         <li><a href="#"><div class="socials youtube"></div><span class="visually-hidden">Ютюб</span></a></li>
       </ul>
-    </div>
     <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип html-academy" width="115" height="40"></a></p>
 
    </footer>
