@@ -97,6 +97,8 @@ p.welcoming {
 }
 
 .hashtag {
+    padding-top: 36px;
+    margin-bottom: 0;
     font-weight: bold;
 }
 
@@ -187,13 +189,27 @@ p .feature {
 }
 
 .form.title {
+    text-transform: uppercase;
     padding: 35px;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
     color: white;
 
+    border: none;
+    width: 568px;
+    height: 86px;
+
     background-color: #766357;
+}
+
+.form.title:hover {
+    background-color: #604e43;
+}
+
+.form.title:active {
+    color: #928a85;
+    background-color: #503e33;
 }
 
 .form-date-in,
