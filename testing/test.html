@@ -6,96 +6,29 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--<main>
-        <h2 class="form-title">Поиск гостиницы в Седоне</h2>
-        <form action="#" method="get"></form>
-        <p><label>Дата заезда: 
-        <input type="date" name="date-in" value="2017-04-24">
-       </label></p>
-       <p><label>Дата выезда: 
-        <input type="date" name="date-out" value="2017-07-04">
-       </label></p>
-       <p><label>
-         Взрослые: <input type="number" name="adults" min="1" max="10" value="2">
-         </label>
-       </p>
-       <p><label>
-        Дети: <input type="number" name="childs" min="0" max="10" value="0">
-        </label>
-      </p>
-      <input type="button" value="Найти">
-      </form>
-
-      Форма для страницы catalog.html
-
-      <form action="#" method="get">
-        <fieldset>
-          <legend>Инфраструктура</legend>
-          <un>
-            <li><label>
-              <input type="checkbox" name="waterpool" checked>Бассейн
-            </label>
-            </li>
-            <li><label>
-              <input type="checkbox" name="parcking">Парковка
-            </label>
-            </li>
-            <li><label>
-              <input type="checkbox" name="wi-fi">Wi-Fi
-            </label>
-            </li>
-          </un>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья</legend>
-          <un>
-            <li><label>
-              <input type="checkbox" name="holel" checked>Гостиница
-            </label>
-            </li>
-            <li><label>
-              <input type="checkbox" name="motel" checked>Мотель
-            </label>
-            </li>
-            <li><label>
-              <input type="checkbox" name="apartments" checked>Апартаменты
-            </label>
-            </li>
-          </un>
-        </fieldset>
-        <fieldset>
-          <label>От
-            <input type="number" name="min" value="0" min="0" max="10000">
-          </label>
-          <label>До
-            <input type="number" name="max" value="3000" min="2000" max="10000">
-          </label>
-
-          Тут слайдер
-
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
-    </main>-->
-  <!--
-    <main>
-    <div class="feature"><h2>Настоящий городок</h2>
-    <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
-    <img src="img/photo-houses.jpg" alt="Фотография вида города">
-  </main>
--->
   <main>
-    <h1>Список продуктов</h1>
-    <ol>
-      <li>Авакадо</li>
-      <li>Сливочный сыр</li>
-      <li>Масло
-        <ol>
-          <li class="num">Масло оливковое</li>
-          <li>Масло подсолнечное</li>
-        </ol>
+    <form>
+      <fieldset>
+        <legend>Инфраструктура</legend>
+    <ul>
+      <li>
+        <label><input type="checkbox" name="waterpool"><span></span>Бассейн</label>
       </li>
-      <li>Рис</li>
-    </ol>
+      <li><label><input type="checkbox" name="parking"><span></span>Парковка</label></li>
+      <li><label><input type="checkbox" name="wi-fi"><span></span>Инторнетик</label></li>
+    </ul>
+  </fieldset>
+  <fieldset class="form-filter">
+
+    <legend>Стоимость в сутки (р):</legend>
+    <div class="border"><label class="from-to">От
+      <input type="number" name="min" value="0" min="0" max="10000">
+    </label>
+    <label class="from-to">До
+      <input type="number" name="max" value="3000" min="2000" max="10000">
+    </label></div>
+    <!--Тут слайдер-->
+  </fieldset>
+  </form>
   </main>
 </body>

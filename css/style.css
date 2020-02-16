@@ -8,13 +8,12 @@ body {
     color: black;
     font-size: 14px;
     line-height: 26px;
-    font-weight: normal;
+    font-weight: 400;
 
     background-color: #f2f2f2;
 }
 
 a {
-    font-weight: bold;
     color: black;
     text-decoration-line: none;
 }
@@ -23,16 +22,15 @@ div.main-text {
     padding-top: 50px;
     padding-bottom: 60px;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 
-    white-space: pre;
     background-color: white;
 }
 
 p.main-text {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .visually-hidden {
@@ -66,8 +64,12 @@ p.main-text {
     background-color: white;
 }
 
+.navigation-items {
+    font-weight: 700;
+}
+
 .navigation a:hover {
-    font-weight: bold;
+    font-weight: 700;
     text-decoration-line: none;
     color: #81b3d2;
 }
@@ -83,7 +85,7 @@ a.current-page {
 }
 
 .navigation a:active {
-    font-weight: bold;
+    font-weight: 700;
     text-decoration-line: none;
     color: #cacaca;
 }
@@ -92,7 +94,8 @@ a.current-page {
 .features,
 .features-list,
 .navigation-items,
-.results {
+.results, 
+.filters-list {
     list-style: none;
 }
 
@@ -111,7 +114,7 @@ a.current-page {
 
 .feature h2 {
     padding-top: 50px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 p .feature {
@@ -132,7 +135,7 @@ p .feature {
     text-transform: uppercase;
     padding: 35px;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     color: white;
 
@@ -154,10 +157,9 @@ p .feature {
 
 .form {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 
-    white-space: pre;
     background-color: white;
 
 }
@@ -174,14 +176,14 @@ p .feature {
 
 .form.subcaption {
     padding-bottom: 54px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .form-date-in,
 .form-date-out,
 .form-adults,
 .form-children {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .form-booking input[type="date"],
@@ -196,7 +198,9 @@ p .feature {
 }
 
 button.find {
-    font-weight: bold;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -227,15 +231,19 @@ h3.hotel-result {
 }
 
 .button-about {
+    font-weight: 700;
     text-align: center;
     color: white;
+
     background-color: #81b3d2;
 
 }
 
 .button-book {
+    font-weight: 700;
     text-align: center;
     color: white;
+    
     background-color: #766357;
 }
 
@@ -269,9 +277,15 @@ h3.hotel-result {
 }
 
 .footer-hashtag {
+    font-size: 21px;
     padding-top: 36px;
     margin-bottom: 0;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.footer-contact {
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .socials.twitter,
@@ -303,3 +317,136 @@ h3.hotel-result {
     background-position: center;
     background-size: 20px 16px;
 }
+
+.form-filter {
+    border: none;
+}
+
+.filters {
+    color: white;
+
+    background-color: #4a7daa;
+    background-image: url(../img/bg_filter_hotels.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1200px;
+}
+
+.filter-group {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+label.filter-name { 
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 23px;
+    padding-left: 40px;
+    margin-bottom: 23px;
+}
+input[type="checkbox"].filter-item {
+    display: none;
+}
+input[type="checkbox"] + span.checkbox {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: url(../img/checkbox-off.svg) no-repeat; 
+    cursor: pointer; 
+}
+
+input[type="checkbox"]:checked + span.checkbox  {
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+   }
+
+   .form-prise {
+       margin-left: 65px;
+   }
+
+   .form-prise input[type="number"] {
+    border: none;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+
+button.button-show {
+    background-color: transparent;
+    font-family: inherit;
+    color: inherit;
+    text-transform: inherit;
+    border: 2px solid white;
+    padding: 11px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 2px;
+}
+
+button.button-show:hover {
+    background-color: white;
+    color: black;
+}
+
+.result-item {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.result-item:hover {
+    color: #81b3d2;
+    cursor: pointer;
+}
+
+.result-item:active {
+    color: #cacaca;
+    cursor: pointer;
+}
+
+.sorting {
+    font-size: 12px;
+}
+
+.sorting a {
+    color: #cacaca;
+    border-bottom: 1px #81b3d2 dotted;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 34px;
+    padding: 1px;
+}
+
+.sorting .selected {
+    color: #81b3d2;
+    border: none;
+}
+.sorting a:hover {
+    color: #81b3d2;
+}
+
+.sorting a:active {
+    color: black;
+    border: none;
+}
+
+.sorting-results {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.button-increase {
+    border-bottom: none;
+    background-image: url(../img/icon-up-dir.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px 10px;
+} 
+
+.button-decrease {
+    border: none;
+    background-image: url(../img/icon-down-dir.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px 10px;
+} 
