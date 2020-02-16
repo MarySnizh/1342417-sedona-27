@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Седона</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navigation">
         <a>
           <img src="img/logo.svg" alt="Логотип" width="140" height="70">
         </a>
-        <ul class="navigation-list">
+        <ul class="navigation-items">
           <li><a href="info.html">Информация</a></li>
           <li><a href="ph-vd.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
@@ -24,14 +24,14 @@
 
     <main>
       <h1 class="visually-hidden">Седона - город-курорт</h1>
-      <section class="main-img" >
-        <div class="welcoming-img">
-          <div class="welcoming-text"><img src="img/welcome.svg" alt="Фотография каньона" width="460px" height="345px"></div>
-          <div class="welcoming-polygon"><img src="img/polygon.svg"></div>
+      <section>
+        <div class="main-image">
+          <div class="image-text"><img src="img/welcome.svg" width="460px" height="345px"></div>
+          <div class="image-polygon"><img src="img/polygon.svg"></div>
         </div>
       </section>
-        <div class="welcoming"><p>Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</p><p class="welcoming">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></div>
+        <div class="main-text"><p>Седона — небольшой городок в Аризоне,
+        заслуживающий большего!</p><p class="main-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></div>
       <section>
         <ol class="features">
           <li>
@@ -97,18 +97,18 @@
            Взрослые: <input type="number" name="adults" min="1" max="10" value="2">
            </label>
          </p>
-         <p><label class="form-childs">
-          Дети: <input type="number" name="childs" min="0" max="10" value="0">
+         <p><label class="form-children">
+          Дети: <input type="number" name="children" min="0" max="10" value="0">
           </label>
         </p>
-        <div class="form-button"><button class="find" type="submit">Найти</button></div>
+        <button class="find" type="submit">Найти</button>
         </form>
       </section>
       <div><img src="img/map.jpg" widht="800" height="500" alt="Карта расположения города Седона"></div>
     </main>
   
    <footer class="main-footer">
-    <p class="hashtag">#VISITSEDONA</p>
+    <p class="footer-hashtag">#VISITSEDONA</p>
     <a href="tel:+74956660266">Тел: +7(495)666-02-66</a>
       <ul class="socials">
         <li><a href="#"><div class="socials twitter"></div><span class="visually-hidden">Твиттер</span></a></li>

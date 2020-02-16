@@ -19,7 +19,7 @@ a {
     text-decoration-line: none;
 }
 
-div.welcoming {
+div.main-text {
     padding-top: 50px;
     padding-bottom: 60px;
     font-size: 21px;
@@ -30,24 +30,35 @@ div.welcoming {
     background-color: white;
 }
 
-p.welcoming {
+p.main-text {
     font-size: 14px;
     font-weight: normal;
 }
 
-.welcoming-img {
+.visually-hidden {
+    position: absolute;
+    width: 1;
+    height: 1;
+    margin: -1;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-image {
     background-image: url(../img/background_photo2.jpg);
     background-repeat: no-repeat;
     width: 1200px;
     height: 509px;
 }
 
-.welcoming-text {
+.image-text {
     text-align: center;
     padding-top: 76px;
 }
 
-.welcoming-polygon {
+.image-polygon {
     padding-top: 23px;
 }
 
@@ -65,7 +76,7 @@ p.welcoming {
     color: #cacaca;
 }
 
-.curent-page {
+a.current-page {
     pointer-events: none;
     cursor: default;
     color: #766357;
@@ -80,27 +91,11 @@ p.welcoming {
 .socials,
 .features,
 .features-list,
-.navigation-list,
+.navigation-items,
 .results {
     list-style: none;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1;
-    height: 1;
-    margin: -1;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.hashtag {
-    padding-top: 36px;
-    margin-bottom: 0;
-    font-weight: bold;
-}
 
 .feature { 
     font-size: 14px;
@@ -133,34 +128,28 @@ p .feature {
     background-color: white;
 }
 
-.socials.twitter,
-.socials.facebook,
-.socials.youtube {
-    width: 46px;
-    height: 48px;
+.form.title {
+    text-transform: uppercase;
+    padding: 35px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
 
-    background-color: #81b3d2;
+    border: none;
+    width: 568px;
+    height: 86px;
+
+    background-color: #766357;
 }
 
-.socials.twitter {
-    background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 17px 16px;
+.form.title:hover {
+    background-color: #604e43;
 }
 
-.socials.facebook {
-    background-image: url(../img/facebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12px 22px;
-}
-
-.socials.youtube {
-    background-image: url(../img/youtube.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px 16px;
+.form.title:active {
+    color: #928a85;
+    background-color: #503e33;
 }
 
 .form {
@@ -188,34 +177,10 @@ p .feature {
     font-weight: normal;
 }
 
-.form.title {
-    text-transform: uppercase;
-    padding: 35px;
-    font-size: 21px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-
-    border: none;
-    width: 568px;
-    height: 86px;
-
-    background-color: #766357;
-}
-
-.form.title:hover {
-    background-color: #604e43;
-}
-
-.form.title:active {
-    color: #928a85;
-    background-color: #503e33;
-}
-
 .form-date-in,
 .form-date-out,
 .form-adults,
-.form-childs {
+.form-children {
     font-weight: bold;
 }
 
@@ -250,13 +215,6 @@ button.find:hover {
 button.find:active {
     color: #94b9d2;
     background-color: #5496bd;
-}
-
-.main-footer {
-    background-color: white;
-    opacity: 0.9;
-
-    background-position: 0 0;
 }
 
 .hotel-result {
@@ -301,4 +259,47 @@ h3.hotel-result {
 .rating p {
     text-align: center;
     background-color: #f2f2f2;
+}
+
+.main-footer {
+    background-color: white;
+    opacity: 0.9;
+
+    background-position: 0 0;
+}
+
+.footer-hashtag {
+    padding-top: 36px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.socials.twitter,
+.socials.facebook,
+.socials.youtube {
+    width: 46px;
+    height: 48px;
+
+    background-color: #81b3d2;
+}
+
+.socials.twitter {
+    background-image: url(../img/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px 16px;
+}
+
+.socials.facebook {
+    background-image: url(../img/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 22px;
+}
+
+.socials.youtube {
+    background-image: url(../img/youtube.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 16px;
 }
