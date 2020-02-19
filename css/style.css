@@ -112,7 +112,9 @@ a.current-page {
     height: 257px;
 }
 
-.feature h2 {
+.feature h2,
+.feature.gray h2 {
+    font-size: 21px;
     padding-top: 50px;
     font-weight: 700;
 }
@@ -129,6 +131,11 @@ p .feature {
 .features-list {
     text-align: center;
     background-color: white;
+}
+
+.features-list h3 {
+    font-size: 21px;
+    font-weight: 700;
 }
 
 .form.title {
@@ -172,17 +179,20 @@ p .feature {
 .form.caption {
     padding-top: 58px;
     font-size: 30px;
+    font-weight: 700;
 }
 
 .form.subcaption {
-    padding-bottom: 54px;
+    font-size: 14px;
     font-weight: 400;
+    padding-bottom: 54px;
 }
 
 .form-date-in,
 .form-date-out,
 .form-adults,
 .form-children {
+    font-size: 14px;
     font-weight: 700;
 }
 
@@ -231,6 +241,7 @@ h3.hotel-result {
 }
 
 .button-about {
+    font-size: 14px;
     font-weight: 700;
     text-align: center;
     color: white;
@@ -240,6 +251,7 @@ h3.hotel-result {
 }
 
 .button-book {
+    font-size: 14px;
     font-weight: 700;
     text-align: center;
     color: white;
@@ -406,6 +418,7 @@ button.button-show:hover {
 
 .sorting {
     font-size: 12px;
+    font-weight: 400;
 }
 
 .sorting a {
