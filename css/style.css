@@ -337,7 +337,7 @@ h3.hotel-result {
     font-size: 16px;
 }
 
-label.filter-name { 
+.filter-name { 
     display: block;
     position: relative;
     width: 26px;
@@ -421,6 +421,7 @@ button.button-show:hover {
     color: #81b3d2;
     border: none;
 }
+
 .sorting a:hover {
     color: #81b3d2;
 }
@@ -434,19 +435,33 @@ button.button-show:hover {
     font-size: 21px;
     font-weight: 700;
 }
-
-.button-increase {
+a.button-increase ,
+a.button-decrease {
     border-bottom: none;
-    background-image: url(../img/icon-up-dir.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 11px 10px;
+}
+.button-increase::before {
+    content: url(../img/icon-up-dir.svg);
+    width: 11px;
+    height: 10px;
 } 
 
-.button-decrease {
-    border: none;
-    background-image: url(../img/icon-down-dir.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 11px 10px;
+.button-decrease::before {
+    content: url(../img/icon-down-dir.svg);
 } 
+
+.star-rating {
+    color: #81b3d2;
+    font-size: 21px;
+}
+
+.star-rating.four::before {
+    content: '★★★★';
+}
+
+.star-rating.three::before {
+    content: '★★★';
+}
+
+.star-rating.two::before {
+    content: '★★';
+}
