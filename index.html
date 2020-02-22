@@ -10,12 +10,13 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <a>
-          <img src="img/logo.svg" alt="Логотип" width="140" height="70">
-        </a>
+       <!-- <a>
+          <img class="logo-image" src="img/logo.svg" alt="Логотип" width="140" height="70">
+        </a>-->
         <ul class="navigation-items">
           <li><a href="info.html">Информация</a></li>
           <li><a href="ph-vd.html">Фото и видео</a></li>
+          <li><a href="#"><img class="logo-image" src="img/logo.svg" alt="Логотип" width="140" height="70"></a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -30,9 +31,11 @@
           <div class="image-polygon"><img src="img/polygon.svg"></div>
         </div>
       </section>
-        <div class="main-text"><p>Седона — небольшой городок в Аризоне,
+      <div class="main-title">
+        <div class="main-text"><p>Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</p><p class="main-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p></div>
-      <section>
+        </div>
+      <!--<section>
         <ol class="features">
           <li>
             <div class="feature"><h2>Настоящий городок</h2>
@@ -79,13 +82,13 @@
             <p>Большинство едет в гранд каньон и толпится там</p></div>
           </li>
         </ol>
-      </section>
+      </section>-->
       <section>
         <div class="form"><p class="form caption">Заинтересовались?</p>
         <p class="form subcaption">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p></div>
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <button type="button" class="form title">Поиск гостиницы в Седоне</button>
+          <button class="form title" type="button">Поиск гостиницы в Седоне</button>
           <form class="form-booking" action="https://echo.htmlacademy.ru" method="get">
           <p><label class="form-date-in">Дата заезда: 
           <input type="date" name="date-in" value="2017-04-24"><!--Потом заменить на type="text"-->
@@ -104,12 +107,12 @@
         <button class="find" type="submit">Найти</button>
         </form>
       </section>
-      <div><img src="img/map.jpg" widht="800" height="500" alt="Карта расположения города Седона"></div>
+      <div><img class="main-map" src="img/map.jpg" alt="Карта расположения города Седона"></div>
     </main>
   
    <footer class="main-footer">
-    <p class="footer-hashtag">#VISITSEDONA</p>
-    <a class="footer-contact" href="tel:+74956660266">Тел: +7(495)666-02-66</a>
+   <div class="footer-left"><p class="footer-hashtag">#VISITSEDONA</p>
+    <a class="footer-contact" href="tel:+74956660266">Тел: +7(495)666-02-66</a></div>
       <ul class="socials">
         <li><a href="#"><div class="socials twitter"></div><span class="visually-hidden">Твиттер</span></a></li>
         <li><a href="#"><div class="socials facebook"></div><span class="visually-hidden">Фейсбук</span></a></li>

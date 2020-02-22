@@ -5,30 +5,20 @@
     <link rel="stylesheet" href="test-style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   </head>
+  <header class="header">
+    <nav class="navigation">
+      <a>
+        <img class="logo" src="../img/logo.svg" alt="Логотип" width="140" height="70">
+      </a>
+      <ul class="navigation-items">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="ph-vd.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
   <main>
-    <form>
-      <fieldset>
-        <legend>Инфраструктура</legend>
-    <ul>
-      <li>
-        <label><input class="visually-hidden" type="checkbox" name="waterpool"><span class="indicator">Бассейн</span></label>
-      </li>
-      <li><label><input class="visually-hidden" type="checkbox" name="parking"><span class="indicator">Парковка</span></label></li>
-      <li><label><input class="visually-hidden" type="checkbox" name="wi-fi"><span class="indicator">Инторнетик</span></label></li>
-    </ul>
-  </fieldset>
-  <fieldset class="form-filter">
-
-    <legend>Стоимость в сутки (р):</legend>
-    <div class="border"><label class="from-to">От
-      <input type="number" name="min" value="0" min="0" max="10000">
-    </label>
-    <label class="from-to">До
-      <input type="number" name="max" value="3000" min="2000" max="10000">
-    </label></div>
-    <!--Тут слайдер-->
-  </fieldset>
-  </form>
   </main>
 </body>

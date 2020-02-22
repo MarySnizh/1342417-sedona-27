@@ -11,26 +11,12 @@ body {
     font-weight: 400;
 
     background-color: #f2f2f2;
+
 }
 
 a {
     color: black;
     text-decoration-line: none;
-}
-
-div.main-text {
-    padding-top: 50px;
-    padding-bottom: 60px;
-    font-size: 21px;
-    font-weight: 700;
-    text-align: center;
-
-    background-color: white;
-}
-
-p.main-text {
-    font-size: 14px;
-    font-weight: 400;
 }
 
 .visually-hidden {
@@ -45,6 +31,10 @@ p.main-text {
 }
 
 .main-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
     background-image: url(../img/background_photo2.jpg);
     background-repeat: no-repeat;
     width: 1200px;
@@ -61,11 +51,33 @@ p.main-text {
 }
 
 .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.logo-image {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}*/
+.navigation-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 40px;
+    padding-left:73px;
+    padding-right: 73px;
+    font-weight: 700;
+    width: 1054px;
+    height: 56px;
+
     background-color: white;
 }
 
-.navigation-items {
-    font-weight: 700;
+.logo-image {
+    display: block;
 }
 
 .navigation a:hover {
@@ -90,6 +102,29 @@ a.current-page {
     color: #cacaca;
 }
 
+.main-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+div.main-text {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+
+    background-color: white;
+}
+
+p.main-text {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .socials,
 .features,
 .features-list,
@@ -99,6 +134,11 @@ a.current-page {
     list-style: none;
 }
 
+/*
+.features {
+    display: flex;
+}
+*/
 
 .feature { 
     font-size: 14px;
@@ -147,7 +187,7 @@ p .feature {
     color: white;
 
     border: none;
-    width: 568px;
+    width: 566px;
     height: 86px;
 
     background-color: #766357;
@@ -163,6 +203,11 @@ p .feature {
 }
 
 .form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    
     font-size: 14px;
     font-weight: 700;
     text-align: center;
@@ -172,8 +217,17 @@ p .feature {
 }
 
 .form-booking {
-    padding: 10px;
+    display: flex;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    
     background-color: white;
+    
+    width: 566px;
+    height: 396px;
 }
 
 .form.caption {
@@ -231,32 +285,94 @@ button.find:active {
     background-color: #5496bd;
 }
 
-.hotel-result {
+.main-results {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+    height: auto;
+
     background-color: white;
 }
 
-h3.hotel-result {
+.hotel-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 30px 73px;
+    background-color: white;
+    border-bottom: 1px solid #cacaca;
+}
+
+.results{
+    border-top: 1px solid #cacaca;
+}
+.result-description {
+    display: flex;
+    align-items: flex-start;
+}
+
+.result-description img {
+    float: left;
+}
+.result-description-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 30px;
+    margin-top: -5px;
+}
+ol.results {
+    padding-left: 0;
+}
+
+.hotel-result h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+a.hotel-result {
     font-size: 21px;
-    
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-type {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 76px;
+    margin-bottom: 16px;
+    margin-top: 10px;
 }
 
 .button-about {
+    display: block;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
     color: white;
 
     background-color: #81b3d2;
+    
+    padding: 7px 17px;
 
 }
 
 .button-book {
+    display: block;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
     color: white;
     
     background-color: #766357;
+
+    padding: 7px 17px;
 }
 
 .button-about:hover {
@@ -276,28 +392,56 @@ h3.hotel-result {
     background-color: #503e33;
     color: #928a85;
 }
-.rating p {
+
+.rating {
+    display: block;
+    float: right;
+}
+
+.rating-number p {
+    display: block;
+    padding: 7px 17px;
+    
     text-align: center;
     background-color: #f2f2f2;
 }
 
 .main-footer {
+    display: flex;
+    position: relative;
+    
+    left: 50%;
+    bottom: 0;
+    z-index: 2;
+    margin-left: -600px;
+    justify-content: space-around;
+    align-items: center;
+
+
     background-color: white;
     opacity: 0.9;
 
-    background-position: 0 0;
+    width: 1200px;
+    height: auto;
+
 }
 
 .footer-hashtag {
     font-size: 21px;
-    padding-top: 36px;
-    margin-bottom: 0;
     font-weight: 700;
+    margin-top: 36px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .footer-contact {
     font-size: 21px;
     font-weight: 700;
+    margin-bottom: 36px;
+}
+.socials {
+    display: flex;
+    margin-left: 6px;
 }
 
 .socials.twitter,
@@ -335,6 +479,10 @@ h3.hotel-result {
 }
 
 .filters {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     color: white;
 
     background-color: #4a7daa;
@@ -342,6 +490,9 @@ h3.hotel-result {
     background-repeat: no-repeat;
     background-position: center;
     width: 1200px;
+}
+.main-form {
+    display: flex;
 }
 
 .filter-group {
@@ -453,13 +604,13 @@ a.button-decrease {
     border-bottom: none;
 }
 .button-increase::before {
-    content: url(../img/icon-up-dir.svg);
-    width: 11px;
-    height: 10px;
+    content: '▲';
+    font-size: 14px;
 } 
 
 .button-decrease::before {
-    content: url(../img/icon-down-dir.svg);
+    content: '▼';
+    font-size: 14px;
 } 
 
 .star-rating {
@@ -477,4 +628,19 @@ a.button-decrease {
 
 .star-rating.two::before {
     content: '★★';
+}
+
+.footer-left {
+    display: block;
+    
+}
+
+.main-map {
+    display: block;
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+    height: 593px;
 }
