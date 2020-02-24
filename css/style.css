@@ -134,12 +134,26 @@ p.main-text {
     list-style: none;
 }
 
-/*
-.features {
-    display: flex;
-}
-*/
+.main-features {
 
+}
+
+ol.features {
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.feature h2 {
+    margin: 0;
+}
 .feature { 
     font-size: 14px;
     line-height: 21px;
@@ -330,8 +344,7 @@ ol.results {
 }
 
 .hotel-result h3 {
-    margin-block-start: 0;
-    margin-block-end: 0;
+    margin: 0;
 }
 a.hotel-result {
     font-size: 21px;
@@ -422,7 +435,7 @@ a.hotel-result {
     opacity: 0.9;
 
     width: 1200px;
-    height: auto;
+    min-height: 120px;
 
 }
 
@@ -480,8 +493,7 @@ a.hotel-result {
 
 .filters {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 
     color: white;
 
@@ -493,6 +505,12 @@ a.hotel-result {
 }
 .main-form {
     display: flex;
+    justify-content: space-around;
+
+}
+
+ul.filters-list {
+    padding: 0;
 }
 
 .filter-group {
@@ -524,6 +542,10 @@ input[type="checkbox"]:checked + span.checkbox  {
     background-repeat: no-repeat;
    }
 
+   .price-filter {
+       display: block;
+   }
+
    .form-prise {
        margin-left: 65px;
    }
@@ -536,6 +558,8 @@ input[type="checkbox"]:checked + span.checkbox  {
 }
 
 button.button-show {
+    display: block;
+
     background-color: transparent;
     font-family: inherit;
     color: inherit;
@@ -568,6 +592,14 @@ button.button-show:hover {
 }
 
 .sorting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+
+
+    background-color: white;
     font-size: 12px;
     font-weight: 400;
 }
@@ -596,9 +628,11 @@ button.button-show:hover {
 }
 
 .sorting-results {
+    padding-left: 30px ;
     font-size: 21px;
     font-weight: 700;
 }
+
 a.button-increase ,
 a.button-decrease {
     border-bottom: none;
@@ -644,3 +678,4 @@ a.button-decrease {
     width: 1200px;
     height: 593px;
 }
+
