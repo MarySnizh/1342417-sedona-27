@@ -133,22 +133,20 @@ p.main-text {
 .filters-list {
     list-style: none;
 }
-
-.main-features {
-
+.features li {
+    display: flex; 
+    flex-wrap: wrap;
 }
 
-ol.features {
+.features {
     margin: 0;
     padding: 0;
     background-color: coral;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 
     width: 1200px;
     margin: 0 auto;
-    
 }
 
 .feature h2 {
@@ -163,7 +161,7 @@ ol.features {
     background-color: #81b3d2;
 
     width: 400px;
-    height: 257px;
+    min-height: 257px;
 }
 
 .feature h2,
@@ -183,8 +181,17 @@ p .feature {
 }
 
 .features-list {
-    text-align: center;
+    display: flex;
     background-color: white;
+    align-items: center;
+    padding: 0;
+    
+    min-height: 257px;
+}
+
+.sub-feature {
+    text-align: center;
+    width: 400px;
 }
 
 .features-list h3 {
@@ -489,12 +496,13 @@ a.hotel-result {
 
 .form-filter {
     border: none;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .filters {
     display: block;
     margin: 0 auto;
-
     color: white;
 
     background-color: #4a7daa;
@@ -503,6 +511,7 @@ a.hotel-result {
     background-position: center;
     width: 1200px;
 }
+
 .main-form {
     display: flex;
     justify-content: space-around;
@@ -542,15 +551,18 @@ input[type="checkbox"]:checked + span.checkbox  {
     background-repeat: no-repeat;
    }
 
-   .price-filter {
-       display: block;
-   }
+.price-filter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 345px;
+}
 
-   .form-prise {
+
+.form-prise {
        margin-left: 65px;
    }
 
-   .form-prise input[type="number"] {
+.form-prise input[type="number"] {
     border: none;
     background: transparent;
     color: white;
@@ -559,15 +571,16 @@ input[type="checkbox"]:checked + span.checkbox  {
 
 button.button-show {
     display: block;
+    width: 137px;
+    min-height: 36px;
+    align-self: center;
+    
 
     background-color: transparent;
     font-family: inherit;
     color: inherit;
     text-transform: inherit;
     border: 2px solid white;
-    padding: 11px;
-    padding-left: 35px;
-    padding-right: 35px;
     border-radius: 2px;
 }
 
